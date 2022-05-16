@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvSubcateitemname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/LightGray_Color"
+        android:padding="@dimen/_8sdp"
+        android:text="Man t-shirts "
+        android:textAlignment="viewStart"
+        android:textAppearance="@style/PoppinsRegular"
+        android:textColor="@color/Blackcolor"
+        android:textSize="@dimen/_14sdp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvinnersubcate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvSubcateitemname"
+        android:orientation="vertical"
+        card_view:itemCount="3"
+        card_view:listitem="@layout/row_all_inner_sub_categories"
+        card_view:visibility="visible" />
+
+</RelativeLayout>

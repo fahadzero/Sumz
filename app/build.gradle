@@ -1,0 +1,140 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
+
+}
+
+android {
+    compileSdk 31
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.ecommerce.user"
+        minSdk 21
+        targetSdk 31
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildFeatures {
+        viewBinding true
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+        applicationVariants.all { variant ->
+            variant.outputs.all { output ->
+                outputFileName = "E-Commerce${variant.name}_${variant.versionName}.apk"
+            }
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+
+    kotlinOptions {
+        jvmTarget = '11'
+    }
+    dependenciesInfo {
+        includeInApk false
+        includeInBundle false
+    }
+
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.2'
+
+    //Font
+    implementation 'io.github.inflationx:calligraphy3:3.1.1'
+    implementation 'io.github.inflationx:viewpump:2.0.3'
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    implementation 'com.intuit.ssp:ssp-android:1.0.6'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.5'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.3.5'
+    implementation 'com.google.firebase:firebase-crashlytics:18.2.1'
+    implementation 'com.google.firebase:firebase-analytics:19.0.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    //Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.2'
+    implementation 'com.squareup.okhttp3:okhttp:5.0.0-alpha.2'
+    implementation 'com.androidadvance:topsnackbar:1.1.1'
+
+
+    implementation 'com.google.android.libraries.places:places:2.5.0'
+    implementation 'com.google.android.gms:play-services-auth:19.2.0'
+    implementation 'com.google.android.gms:play-services-places:17.0.0'
+    implementation "androidx.core:core-ktx:1.7.0"
+
+    //noinspection GradleDependency
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'com.google.firebase:firebase-iid:21.1.0'
+    implementation 'com.facebook.android:facebook-login:5.15.3'
+
+    //CircelImageView
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+
+    //Image Loading
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+
+    //Permission Manage
+    implementation "com.karumi:dexter:6.0.2"
+
+    //Size layout
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    implementation 'com.intuit.ssp:ssp-android:1.0.6'
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    //Rating Bar
+    implementation 'me.zhanghai.android.materialratingbar:library:1.4.0'
+    implementation "com.daimajia.swipelayout:library:1.2.0@aar"
+
+    //expand list
+    implementation 'com.github.kamrul3288:Expandable-Recyclerview-List-Android:1.0.2'
+
+    //state bar
+    implementation 'com.kofigyan.stateprogressbar:stateprogressbar:1.0.0'
+    implementation 'com.thoughtbot:expandablerecyclerview:1.3'
+    implementation 'com.github.dhaval2404:imagepicker:2.1'
+
+    //payment gateway
+    implementation('com.razorpay:checkout:1.6.12')
+    implementation 'com.stripe:stripe-android:16.1.1'
+    implementation 'co.paystack.android:paystack:3.1.3'
+    implementation 'com.github.flutterwave.rave-android:rave_android:2.1.37'
+
+    implementation 'com.github.denzcoskun:ImageSlideshow:0.1.0'
+
+
+    // Declare the dependencies for the Crashlytics and Analytics libraries
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    //Firebase
+    implementation 'com.google.firebase:firebase-core:20.0.0' // get Firebase Token
+    implementation 'com.google.firebase:firebase-messaging:23.0.0' // push notification
+    implementation 'com.google.firebase:firebase-auth:21.0.1'
+    implementation platform('com.google.firebase:firebase-bom:28.3.1')
+    implementation 'com.google.firebase:firebase-crashlytics-ktx'
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+
+}

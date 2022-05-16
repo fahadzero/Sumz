@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ActRetuenRequest">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rlToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvviewall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/return_request"
+            android:textAllCaps="false"
+            android:textAppearance="@style/PoppinsSemiBold"
+            android:textColor="@color/Blackcolor"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingPrefix" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toTopOf="@id/btnreturnrequest"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rlToolBar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/_5sdp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constrainedHeight="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/LightGray_Color"
+                    android:padding="@dimen/_8sdp"
+                    app:cardElevation="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_70sdp"
+                        android:layout_marginHorizontal="@dimen/_5sdp"
+                        android:background="@null"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="0dp"
+                        app:cardMaxElevation="0dp"
+                        app:cardPreventCornerOverlap="false"
+                        app:cardUseCompatPadding="true"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/iv_cartitemm"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/LightGray_Color"
+                            android:scaleType="fitXY" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/tvcateitemname"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:ellipsize="end"
+                        android:maxEms="10"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="Man t-shirts"
+                        android:textAlignment="viewStart"
+                        android:textAppearance="@style/PoppinsSemiBold"
+                        android:textColor="@color/Blackcolor"
+                        android:textSize="@dimen/_12sdp"
+                        app:layout_constraintBottom_toTopOf="@id/tvcateitemname"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/card"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0" />
+
+                    <TextView
+                        android:id="@+id/tvcartitemsize"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:text="@string/size"
+                        android:textAlignment="viewStart"
+                        android:textAppearance="@style/PoppinsRegular"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/_10sdp"
+                        app:layout_constraintBottom_toTopOf="@id/tvcartitemprice"
+                        app:layout_constraintStart_toEndOf="@id/card"
+                        app:layout_constraintTop_toBottomOf="@+id/tvcateitemname" />
+
+                    <TextView
+                        android:id="@+id/tvcartitemqty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:text="@string/qty_1"
+                        android:textAlignment="viewStart"
+                        android:textAppearance="@style/PoppinsRegular"
+                        android:textColor="@color/medium_gray"
+                        android:textSize="@dimen/_10sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/card"
+                        app:layout_constraintTop_toBottomOf="@+id/tvcartitemsize" />
+
+                    <TextView
+                        android:id="@+id/tvcartitemprice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:text="$ 10.00"
+                        android:textAlignment="viewStart"
+                        android:textAppearance="@style/PoppinsSemiBold"
+                        android:textColor="@color/Blackcolor"
+                        android:textSize="@dimen/_12sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvcartitemsize" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@color/LightGray_Color"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/tvtext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/why_are_you_returning_this_item"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/PoppinsSemiBold"
+                android:textColor="@color/Blackcolor"
+                android:textSize="@dimen/_15sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cl1" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvreturntext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never"
+                android:clipToPadding="false"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constrainedHeight="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvtext" />
+
+
+            <TextView
+                android:id="@+id/tvcomments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/comments"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/PoppinsSemiBold"
+                android:textColor="@color/Blackcolor"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintBottom_toTopOf="@id/edtcouponcode"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rvreturntext" />
+
+
+            <EditText
+                android:id="@+id/edtReturnComments"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/edt_border"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="top|start"
+                android:hint="@string/write_comments_optional"
+                android:padding="@dimen/_4sdp"
+                android:textAppearance="@style/PoppinsRegular"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvcomments" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnreturnrequest"
+        style="@style/ClickableView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@color/colorPrimary"
+        android:padding="5dp"
+        android:text="@string/submit_return_request"
+        android:textAllCaps="false"
+        android:textAppearance="@style/PoppinsSemiBold"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/scroll"
+        app:layout_constraintVertical_bias="1" />
+</androidx.constraintlayout.widget.ConstraintLayout>

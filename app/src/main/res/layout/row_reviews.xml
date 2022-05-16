@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_8sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/ivusershop"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile"
+            android:tint="#f2cea5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0"
+            app:riv_oval="true" />
+
+        <TextView
+            android:id="@+id/tvreviewsname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="First Test"
+            android:textAppearance="@style/PoppinsSemiBold"
+            android:textColor="@color/Blackcolor"
+            android:textAlignment="viewStart"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintStart_toEndOf="@id/ivusershop"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_ratting"
+            android:layout_width="95dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:src="@drawable/ratting0"
+            app:layout_constraintStart_toEndOf="@id/ivusershop"
+            app:layout_constraintTop_toBottomOf="@id/tvreviewsname" />
+
+        <TextView
+            android:id="@+id/tvreviewsdesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:justificationMode="inter_word"
+            android:text="@string/awesome"
+            android:textAlignment="viewStart"
+            android:textAppearance="@style/PoppinsRegular"
+            android:textColor="@color/medium_gray"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ivusershop"
+            app:layout_constraintTop_toBottomOf="@id/iv_ratting" />
+
+        <TextView
+            android:id="@+id/tvreviewsdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="03 August 2021"
+            android:textAlignment="viewStart"
+            android:textAppearance="@style/PoppinsRegular"
+            android:textColor="@color/medium_gray"
+            android:textSize="@dimen/_9sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@color/viewgray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvreviewsdesc"
+            app:layout_constraintVertical_bias="0.99" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

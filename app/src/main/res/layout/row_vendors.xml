@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_marginHorizontal="@dimen/_5sdp"
+        app:cardElevation="0dp"
+        app:cardMaxElevation="0dp"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true"
+        app:strokeWidth="0.4dp"
+        app:strokeColor="@android:color/darker_gray"
+        app:cardPreventCornerOverlap="false"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:id="@+id/cl_main"
+            android:layout_height="match_parent">
+
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/ivvendors"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/profile"
+                android:tint="#f2cea5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintVertical_bias="0.3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:riv_oval="true" />
+
+
+            <TextView
+                android:id="@+id/tvVendorsName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxEms="15"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/Blackcolor"
+                android:textAppearance="@style/PoppinsRegular"
+                android:text="Infotech Gravity"
+                android:textAlignment="viewStart"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivvendors" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

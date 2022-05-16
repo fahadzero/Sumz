@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_30sdp"
+        android:background="@drawable/bg_corner_white_10"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="@dimen/_7sdp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/app_name"
+                 android:textAppearance="@style/PoppinsSemiBold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_18sdp" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tvDesc"
+                android:textAppearance="@style/PoppinsRegular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_7ssp"
+                android:gravity="center"
+                android:text="@string/exit_screen"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10ssp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/llBottomView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/_10sdp">
+                <TextView
+                    android:id="@+id/tvcontinueshooping"
+                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:padding="@dimen/_8ssp"
+                    style="@style/logout_button"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:text="@string/continue_shopping"
+                    android:textColor="@color/white"
+                    tools:ignore="RtlCompat"
+                    tools:targetApi="lollipop" />
+                <TextView
+                    android:id="@+id/tvgotocart"
+                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    style="@style/logout_button"
+                    android:padding="@dimen/_8ssp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:text="@string/go_to_cart"
+                    android:textColor="@color/white"
+                    tools:ignore="RtlCompat" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

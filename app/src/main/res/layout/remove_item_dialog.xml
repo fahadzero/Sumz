@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/dlg_bg_corner_10"
+    android:padding="@dimen/_8sdp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:src="@drawable/ic_close"
+        android:layout_marginTop="@dimen/_8sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/Blackcolor" />
+
+
+
+    <ImageView
+        android:id="@+id/ivTrueCheckMark"
+        android:src="@drawable/ic_round_close"
+        android:layout_width="@dimen/_80sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_15sdp"
+        app:layout_constraintTop_toBottomOf="@id/iv_close"
+        android:layout_height="@dimen/_80sdp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvRemoveTitle"
+        android:layout_width="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivTrueCheckMark"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/remove_product"
+        android:textColor="@color/Blackcolor"
+        android:textSize="@dimen/_16ssp"
+        android:textAppearance="@style/PoppinsSemiBold"
+        android:layout_height="wrap_content"/>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAlertMessage"
+        android:textColor="@color/Blackcolor"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/tvRemoveTitle"
+        android:text="@string/product_added_successfully_into_your_cart"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_marginHorizontal="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"/>
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnProceed"
+        style="@style/ClickableView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:background="@drawable/bg_white_10"
+        app:backgroundTint="@color/Blackcolor"
+        android:text="@string/proceed"
+        android:textAllCaps="false"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:textAppearance="@style/PoppinsSemiBold"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvAlertMessage"
+        app:layout_constraintVertical_bias="1" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:leftEdgeSwipeOffset="0dp"
+    app:rightEdgeSwipeOffset="0dp">
+
+
+    <LinearLayout
+        android:id="@+id/bottom_wraper"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:textAlignment="viewStart"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/tvDelete"
+            android:layout_width="@dimen/_65sdp"
+            android:layout_height="match_parent"
+            android:background="@color/red"
+            android:backgroundTint="@color/red"
+            android:gravity="center"
+
+            android:text="@string/delete"
+            android:textAppearance="@style/PoppinsRegular"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp" />
+
+        <TextView
+            android:id="@+id/tvEdit"
+            android:layout_width="@dimen/_65sdp"
+            android:layout_height="match_parent"
+            android:background="@color/medium_gray"
+            android:backgroundTint="@color/medium_gray"
+            android:gravity="center"
+            android:text="@string/edit"
+            android:textAppearance="@style/PoppinsRegular"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/_8sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/tvUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="Hardik Sardhara"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/PoppinsSemiBold"
+                android:textColor="@color/Blackcolor"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintBottom_toTopOf="@id/tvareaaddress"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvareaaddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="Surat - 309050"
+                android:textAlignment="viewStart"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/_10sdp"
+                app:layout_constraintBottom_toTopOf="@id/tvUserphone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvUserName" />
+
+            <TextView
+                android:id="@+id/tvUserphone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="6598741452"
+                android:textAlignment="viewStart"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/_10sdp"
+                app:layout_constraintBottom_toTopOf="@id/tvusermailid"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvareaaddress" />
+
+            <TextView
+                android:id="@+id/tvusermailid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="test@yopmail.com"
+                android:textAlignment="viewStart"
+                android:textColor="@color/gray"
+                app:layout_constraintBottom_toTopOf="@id/view"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvUserphone" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@color/LightGray_Color"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvusermailid"
+                app:layout_constraintVertical_bias="0.99" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.daimajia.swipe.SwipeLayout>

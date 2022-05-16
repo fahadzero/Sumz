@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    tools:context=".activity.ActMain">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivSplashBanner"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/welcome"
+        app:layout_constraintBottom_toTopOf="@+id/tvIntroDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvIntroDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/you_stay_home_we_are_always_here"
+        android:textAlignment="center"
+        android:textAppearance="@style/PoppinsSemiBold"
+        android:textColor="@color/Blackcolor"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintBottom_toTopOf="@+id/btnLogin"
+        app:layout_constraintTop_toBottomOf="@+id/ivSplashBanner" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_12sdp"
+        android:background="@drawable/round_blue_bg_8"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSkip" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSkip"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:background="@drawable/round_blue_bg_8"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/skip_continue"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintBottom_toTopOf="@+id/tvAccountCreator" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAccountCreator"
+        style="@style/ClickableView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/don_t_have_an_account"
+        android:textAppearance="@style/PoppinsRegular"
+        android:textColor="@color/medium_gray"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintBottom_toTopOf="@+id/tvSignUp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSignUp"
+        style="@style/ClickableView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:text="@string/signup"
+        android:textAlignment="viewStart"
+        android:textAppearance="@style/PoppinsSemiBold"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

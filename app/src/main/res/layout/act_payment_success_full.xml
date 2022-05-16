@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ic_successful"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_250sdp"
+        android:src="@drawable/ic_successful"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <TextView
+        android:id="@+id/tvsucess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/order_sucess"
+        android:textAppearance="@style/PoppinsSemiBold"
+        android:textColor="@color/Blackcolor"
+        android:textSize="@dimen/_18sdp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ic_successful" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center"
+        android:text="@string/your_packet_will_be_send_to_yout_br_address_thanks_for_order"
+        android:textAppearance="@style/PoppinsRegular"
+        android:textColor="@color/Blackcolor"
+        android:textSize="@dimen/_15sdp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvsucess" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btncontinueshopping"
+        style="@style/ClickableView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@color/colorPrimary"
+        android:padding="5dp"
+        android:text="@string/continue_shopping"
+        android:textAllCaps="false"
+        android:textAppearance="@style/PoppinsSemiBold"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="1" />
+</androidx.constraintlayout.widget.ConstraintLayout>

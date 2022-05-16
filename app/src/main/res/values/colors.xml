@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2291FF</color>
+    <color name="tr">#00000000</color>
+    <color name="colorPrimaryDark">#0276EA</color>
+    <color name="teal_200">#2291FF</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="medium_gray">#949494</color>
+    <color name="gray">#656464</color>
+    <color name="light_green">#57D796</color>
+    <color name="Blackcolor">#263238</color>
+    <color name="Blue_color">#2291FF</color>
+    <color name="LightGray_Color">#F5F5F5</color>
+    <color name="progressbar">#e4e4e6</color>
+    <color name="btnapply">#f5f5f5</color>
+    <color name="viewgray">#e8e8e9</color>
+    <color name="green">#34c759</color>
+    <color name="red">#ff0000</color>
+    <color name="darkpink">#af52de</color>
+    <color name="darkyellow">#ff9500</color>
+    <color name="darkred">#ff3b30</color>
+    <color name="shippedcolor">#44bedf</color>
+    <color name="sizebg">#edf7fd</color>
+    <color name="darkgrary">#575757</color>
+
+
+
+    <!--263238 - Blackcolor (edited)
+2291FF - Blue color
+F5F5F5 - LightGray_Color-->
+</resources>

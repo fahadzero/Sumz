@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/dlg_bg_corner_10"
+    android:padding="@dimen/_8sdp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:src="@drawable/ic_close"
+        android:layout_marginTop="@dimen/_8sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/Blackcolor" />
+
+
+
+    <ImageView
+        android:id="@+id/ivTrueCheckMark"
+        android:src="@drawable/ic_check_mark"
+        android:layout_width="@dimen/_80sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintTop_toBottomOf="@id/iv_close"
+        android:layout_height="@dimen/_80sdp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSuccess"
+        android:layout_width="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivTrueCheckMark"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/success"
+        android:textColor="@color/Blackcolor"
+        android:textSize="@dimen/_16ssp"
+        android:textAppearance="@style/PoppinsSemiBold"
+        android:layout_height="wrap_content"/>
+    
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSuccessDescription"
+            android:textColor="@color/Blackcolor"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/tvSuccess"
+            android:text="@string/product_added_successfully_into_your_cart"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"/>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSuccessDescription"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/btncontinueshopping"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="@string/continue_shopping"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textAppearance="@style/PoppinsMedium"
+            app:backgroundTint="@color/darkyellow"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/bg_white_10"/>
+
+
+        <Button
+            android:id="@+id/btnGotoCart"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="@string/go_to_cart"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:layout_marginStart="4dp"
+            android:textAppearance="@style/PoppinsMedium"
+            app:backgroundTint="@color/Blackcolor"
+            android:background="@drawable/bg_white_10"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

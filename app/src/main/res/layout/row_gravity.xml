@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_8sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivwishlist"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:checked="false"
+            android:elevation="2dp"
+            android:src="@drawable/ic_dislike"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.95"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.05" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:background="@null"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="0dp"
+            app:cardMaxElevation="0dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/iv_cartitemm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/LightGray_Color"
+                android:scaleType="fitXY"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tvcateitemname"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:maxEms="25"
+            android:singleLine="true"
+            android:text="Man t-shirts "
+            android:textAppearance="@style/PoppinsRegular"
+            android:textColor="@color/Blackcolor"
+            android:textSize="@dimen/_12sdp"
+            android:textAlignment="viewStart"
+            app:layout_constraintBottom_toTopOf="@id/tvcateitemname"
+            app:layout_constraintEnd_toStartOf="@id/ivwishlist"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toEndOf="@id/card"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_rate"
+            android:layout_width="@dimen/_37sdp"
+            android:layout_height="@dimen/_17sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            app:layout_constraintBottom_toTopOf="@id/tvProductPrice"
+            app:layout_constraintStart_toEndOf="@id/card"
+            app:layout_constraintTop_toBottomOf="@+id/tvcateitemname"
+            app:tint="@color/white">
+
+            <ImageView
+                android:id="@+id/iv_rate"
+                android:layout_width="@dimen/_12sdp"
+                android:layout_height="@dimen/_12sdp"
+                android:src="@drawable/ic_star"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/tvRatePro"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/darkyellow" />
+
+            <TextView
+                android:id="@+id/tvRatePro"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_12sdp"
+                android:text="2.0"
+                android:textAppearance="@style/PoppinsRegular"
+                android:textColor="@color/Blackcolor"
+                android:textSize="@dimen/_10sdp"
+                android:textAlignment="viewStart"
+                android:layout_marginRight="@dimen/_5sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/iv_rate"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/tvProductPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:text="$ 50.00"
+            android:textAppearance="@style/PoppinsSemiBold"
+            android:textColor="@color/Blackcolor"
+            android:textSize="@dimen/_13sdp"
+            android:textAlignment="viewStart"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/card"
+            app:layout_constraintTop_toBottomOf="@id/cl_rate" />
+
+        <TextView
+            android:id="@+id/tvProductDisprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/striking_text"
+            android:text="$ 10.00"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/_10sdp"
+            android:textAlignment="viewStart"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintStart_toEndOf="@id/tvProductPrice"
+            app:layout_constraintTop_toBottomOf="@id/cl_rate" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/LightGray_Color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cl1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
