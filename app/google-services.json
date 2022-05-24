@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "770447331090",
-    "project_id": "ecommerce-e4bd8",
-    "storage_bucket": "ecommerce-e4bd8.appspot.com"
+    "project_number": "66429514296",
+    "project_id": "sumz-d109f",
+    "storage_bucket": "sumz-d109f.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:770447331090:android:1ca8e8662fcbc1f8276dcb",
+        "mobilesdk_app_id": "1:66429514296:android:ac8ceb23d8865022fa6ccd",
         "android_client_info": {
-          "package_name": "com.ecommerce.user"
+          "package_name": "com.sumz.app"
         }
       },
       "oauth_client": [
         {
-          "client_id": "770447331090-4h5raei4jqqe3g643u86dh9ig5hbjc9i.apps.googleusercontent.com",
+          "client_id": "66429514296-di9ohonvgcl42efprfn2mfpeku0l5lha.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAdV5HhUhg4L8vyELqhSXNvYS9gPzbEWgQ"
+          "current_key": "AIzaSyD_cx5H2UfghYdaR_eXKBgFXZaZg4p22q0"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "770447331090-4h5raei4jqqe3g643u86dh9ig5hbjc9i.apps.googleusercontent.com",
+              "client_id": "66429514296-di9ohonvgcl42efprfn2mfpeku0l5lha.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

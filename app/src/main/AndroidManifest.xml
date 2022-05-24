@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.ecommerce.user">
+    package="com.sumz.app">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -39,7 +39,7 @@
     </queries>
 
     <application
-        android:name=".base.BaseApplication"
+        android:name="com.sumz.app.base.BaseApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -53,94 +53,94 @@
         tools:replace="android:allowBackup"
         tools:targetApi="q">
         <activity
-            android:name=".activity.ActSignUpVendor"
+            android:name="com.sumz.app.activity.ActSignUpVendor"
             android:exported="false" />
         <activity
-            android:name=".activity.ActAddMoney"
+            android:name="com.sumz.app.activity.ActAddMoney"
             android:exported="true" />
         <activity
-            android:name=".activity.ActImageSlider"
+            android:name="com.sumz.app.activity.ActImageSlider"
             android:exported="false" />
         <activity
-            android:name=".activity.ActReturnTrackOrder"
+            android:name="com.sumz.app.activity.ActReturnTrackOrder"
             android:exported="true" />
         <activity
-            android:name=".activity.ActRetuenRequest"
+            android:name="com.sumz.app.activity.ActRetuenRequest"
             android:exported="true" />
         <activity
-            android:name=".activity.ActWelCome"
+            android:name="com.sumz.app.activity.ActWelCome"
             android:exported="true" />
         <activity
-            android:name=".activity.ActPayStack"
+            android:name="com.sumz.app.activity.ActPayStack"
             android:exported="true" />
         <activity
-            android:name=".activity.ActCardInfo"
+            android:name="com.sumz.app.activity.ActCardInfo"
             android:exported="true" />
         <activity
-            android:name=".activity.ActPaymentMethod"
+            android:name="com.sumz.app.activity.ActPaymentMethod"
             android:exported="true" />
         <activity
-            android:name=".activity.ActOffers"
+            android:name="com.sumz.app.activity.ActOffers"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".activity.ActPaymentSuccessFull"
+            android:name="com.sumz.app.activity.ActPaymentSuccessFull"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".activity.ActWallet"
+            android:name="com.sumz.app.activity.ActWallet"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".activity.ActReturnPolicy"
+            android:name="com.sumz.app.activity.ActReturnPolicy"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".activity.ActHelpContactUs"
+            android:name="com.sumz.app.activity.ActHelpContactUs"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".activity.ActProvacyPolicy"
+            android:name="com.sumz.app.activity.ActProvacyPolicy"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".activity.ActStoreInfo"
+            android:name="com.sumz.app.activity.ActStoreInfo"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".activity.ActTrackOrder"
+            android:name="com.sumz.app.activity.ActTrackOrder"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".activity.ActNotification"
+            android:name="com.sumz.app.activity.ActNotification"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".activity.ActVendorsDetails"
+            android:name="com.sumz.app.activity.ActVendorsDetails"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".activity.ActVendors"
+            android:name="com.sumz.app.activity.ActVendors"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".activity.ActBrandDetails"
+            android:name="com.sumz.app.activity.ActBrandDetails"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".activity.ActBrand"
+            android:name="com.sumz.app.activity.ActBrand"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".activity.ActProductDescription"
+            android:name="com.sumz.app.activity.ActProductDescription"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".activity.ActTutorial"
+            android:name="com.sumz.app.activity.ActTutorial"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".activity.ActSplashScreen"
+            android:name="com.sumz.app.activity.ActSplashScreen"
             android:exported="true"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan">
@@ -151,93 +151,93 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.ActOrderDetails"
+            android:name="com.sumz.app.activity.ActOrderDetails"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".activity.ActSearch"
+            android:name="com.sumz.app.activity.ActSearch"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".activity.ActAllSubCategories"
+            android:name="com.sumz.app.activity.ActAllSubCategories"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".activity.ActAllCategories"
+            android:name="com.sumz.app.activity.ActAllCategories"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".activity.ActReviews"
+            android:name="com.sumz.app.activity.ActReviews"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".activity.ActWriteReview"
+            android:name="com.sumz.app.activity.ActWriteReview"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".activity.ActProductDetails"
+            android:name="com.sumz.app.activity.ActProductDetails"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".activity.ActCheckout"
+            android:name="com.sumz.app.activity.ActCheckout"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".activity.ActViewAll"
+            android:name="com.sumz.app.activity.ActViewAll"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".activity.ActEditProfile"
+            android:name="com.sumz.app.activity.ActEditProfile"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".activity.ActSettings"
+            android:name="com.sumz.app.activity.ActSettings"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".activity.ActChangePassword"
+            android:name="com.sumz.app.activity.ActChangePassword"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".activity.ActAddAddress"
+            android:name="com.sumz.app.activity.ActAddAddress"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".activity.ActAddress"
+            android:name="com.sumz.app.activity.ActAddress"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".activity.ActOTPVerification"
+            android:name="com.sumz.app.activity.ActOTPVerification"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".activity.ActSignUp"
+            android:name="com.sumz.app.activity.ActSignUp"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".activity.ActForgotPassword"
+            android:name="com.sumz.app.activity.ActForgotPassword"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".activity.ActLogin"
+            android:name="com.sumz.app.activity.ActLogin"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".activity.ActStripePayment"
+            android:name="com.sumz.app.activity.ActStripePayment"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".activity.ActMain"
+            android:name="com.sumz.app.activity.ActMain"
             android:exported="true"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".activity.ActOption"
+            android:name="com.sumz.app.activity.ActOption"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
 
         <service
-            android:name=".service.MyInstanceIDListenerService"
+            android:name="com.sumz.app.service.MyInstanceIDListenerService"
             android:exported="true">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
